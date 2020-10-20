@@ -6,9 +6,7 @@ validate :date_not_possible
 #validates 
 end
 
-def released? 
-Song.released == true 
-end 
+
 
 
 def date_not_possible

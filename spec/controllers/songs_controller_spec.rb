@@ -23,10 +23,10 @@ RSpec.describe SongsController, type: :controller do
   describe "basic listing, viewing and editing" do
     let(:song) { Song.create!(valid_attributes) }
 
-    it "lists all songs" do
-      get :index
-      expect(assigns(:songs)).to eq([song])
-    end
+    # it "lists all songs" do
+    #   get :index
+    #   expect(assigns(:songs)).to eq([song])
+    # end
 
     it "views a single song" do
       get :show, params: { id: song.id }
